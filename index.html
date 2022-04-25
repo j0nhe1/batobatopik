@@ -3,11 +3,47 @@
     <head>
         <title>Bato, Bato, Pik</title>
         <meta charset="utf-8"/>
-        <script type="text/javascript" src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <html lang="en">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
-
     <body>
-
+        <div class="main" id="main">
+            <div id ="resultbox">
+                <div class="score">
+                    <p>PLAYER</p>
+                    <p id="pscore" class="scores">0</p>
+                </div>
+                <div class="selection">
+                    <a id="pchoice"></a>    
+                </div>
+                <div id="result">
+                    <p id="resultmess">Let's play!</p>    
+                </div>
+                <div class="selection">
+                    <a id="cchoice"></a>    
+                </div>   
+                <div class="score">
+                    <p>COMPUTER</p>
+                    <p id="cscore" class="scores">0</p>
+                </div>                       
+            </div>
+            <div class="choose">
+                <button type="button" class="button rock" id="rock"><img src="images/rock.jpg" alt="rock" class="imgchoice"></button>
+                <button type="button" class="button paper" id="paper"><img src="images/paper.jpg" alt="paper" class="imgchoice"></button>
+                <button type="button" class="button scissors" id="scissors"><img src="images/scissors.jpg" alt="scissors" class="imgchoice"></button>
+            </div>
+        </div>
+        <div id="gameover" class="overlay pyro">
+            <div class="overlay-content">
+             <p id=>GAME OVER!</p>
+             <p id="overall"></p>
+             <a href="">New Game</a>
+            </div>
+            <div id="fwone"></div>
+            <div id="fwtwo"></div>
+        </div>
     </body>
 
 </html>
